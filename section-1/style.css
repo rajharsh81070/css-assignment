@@ -4,7 +4,6 @@
 }
 
 body {
-  /* margin: 5px; */
   min-height: 100vh;
 }
 
@@ -36,7 +35,6 @@ body {
   height: 50%;
   margin-bottom: 18px;
   margin-top: -2px;
-  /* margin-right: ; */
 }
 
 .card {
@@ -130,6 +128,5 @@ body {
     margin: 0px 2px 15px 1px;
     height: 30%;
     background-color: rgb(116, 113, 113);
-    /* height: 100%; */
   }
 }
