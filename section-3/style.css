@@ -8,7 +8,6 @@ body {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background: rgb(81, 81, 81);
   font-family: consolas;
 }
 
@@ -32,13 +31,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.6s ease-in-out;
   opacity: 1;
+  border-radius: 36px;
 }
 
 .container .card:hover {
-  height: 420px;
+  height: 330px;
 }
 
 .container .card:hover .face {
@@ -49,10 +48,8 @@ body {
   position: relative;
   width: 260px;
   height: 260px;
-  background: rgb(102, 102, 102);
   top: -60px;
   z-index: 1;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .container .card .face img {
