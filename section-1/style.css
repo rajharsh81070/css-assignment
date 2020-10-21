@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* margin: 5px; */
+  min-height: 100vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  margin: 6px;
+}
+
+.right-column {
+  width: 100%;
+  height: 98%;
+}
+
+.right-column-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 18px;
+  margin-top: -2px;
+  /* margin-right: ; */
+}
+
+.card {
+  box-shadow: 0 10px 10px 0 rgb(122, 9, 9);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.right-column-row-1 {
+  width: 48%;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.6);
+  border-radius: 3%;
+  margin-right: 12px;
+  height: 100%;
+  background-color: rgb(116, 113, 113);
+}
+
+.right-column-row-1:hover {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.9);
+}
+
+.text {
+  padding: 16px 16px;
+  color: white;
+}
+
+.left-column {
+  height: 98vh;
+  background: url("./assets/1.png");
+  background-size: cover;
+  position: relative;
+}
+
+.left-column-div {
+  position: absolute;
+  background: rgba(107, 107, 107, 0.75);
+  padding: 4px 8px;
+  color: white;
+  margin: 0;
+  width: -webkit-fill-available;
+  top: 50%;
+  height: 49%;
+}
+
+.left-column-div h2 {
+  padding: 20px;
+  font-size: xxx-large;
+}
+
+.line-truncate {
+  padding: 20px;
+  font-size: larger;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin: 6px;
+  }
+  .right-column {
+    width: 100%;
+    height: 100%;
+  }
+  .right-column-row {
+    display: initial;
+  }
+  .right-column-row-1 {
+    width: 100%;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 3%;
+    margin: 0px 2px 15px 1px;
+    height: 30%;
+    background-color: rgb(116, 113, 113);
+    /* height: 100%; */
+  }
+}
